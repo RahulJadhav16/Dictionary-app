@@ -142,6 +142,13 @@ const meaning=(input)=>
 	.then(response =>{
         
         console.log(response)
+        if(response.valid==true)
+        {
+          
+        
+
+
+        
         definition.innerHTML=response.definition
         word.innerHTML=response.word
         const text=response.definition
@@ -157,6 +164,14 @@ const meaning=(input)=>
             
         }
         )
+      }
+      else
+      {
+        definition.innerHTML="Please enter valid word";
+        word.innerHTML="given word is not a valid word";
+
+
+      }
         
 
        
