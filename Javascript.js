@@ -170,8 +170,7 @@ const meaning=(input)=>
         definition.innerHTML="Please enter valid word";
         word.innerHTML="given word is not a valid word";
 
-
-      }
+}
         
 
        
